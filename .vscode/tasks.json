@@ -7,12 +7,17 @@
             "command": "g++",
             "args": [
                 "-g",
-                "*.cpp",
+                "-I", "src/core",
+                "-I", "src/ui",
+                "-I", "src/utils",
+                "src/core/*.cpp",
+                "src/ui/*.cpp",
+                "src/utils/*.cpp",
                 "-o",
-                "main.exe"
+                "build/main.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/src"
+                "cwd": "${workspaceFolder}"
             },
             "group": {
                 "kind": "build",

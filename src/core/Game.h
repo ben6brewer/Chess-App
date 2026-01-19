@@ -13,6 +13,7 @@ private:
 
 public:
     Game();
+    ~Game();
     PlayerTurn GetPlayerTurn();
 private:
     void UpdatePlayerTurn();

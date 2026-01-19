@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 class Log {
 public:
@@ -9,8 +10,8 @@ private:
     int m_LogLevel;
 public:
     void setLevel(int level);
-    void Print(const char* message);
-    void Error(const char* message);
-    void Warn(const char* message);
-    void Info(const char* message);
+    void Print(std::string message);
+    void Error(std::string message);
+    void Warn(std::string message);
+    void Info(std::string message);
 };
